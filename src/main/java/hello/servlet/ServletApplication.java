@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @ServletComponentScan //서블릿 자동 등록
-@SpringBootApplication
+@SpringBootApplication //스프링 부트 어노테이션
 public class ServletApplication {
 
 	public static void main(String[] args) {
