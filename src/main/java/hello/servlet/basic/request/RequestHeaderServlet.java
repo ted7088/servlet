@@ -35,6 +35,8 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println("request.isSecure() = " + request.isSecure()); //https 사용 유무
         System.out.println("--- REQUEST-LINE - end ---");
         System.out.println();
+
+
     }
 
 
