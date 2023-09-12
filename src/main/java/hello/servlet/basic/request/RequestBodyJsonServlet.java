@@ -14,12 +14,10 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 
-@WebServlet(name = "requestBodyJsonServlet" , urlPatterns = "/request-body-json")
+@WebServlet(name = "requestBodyJsonServlet", urlPatterns = "/request-body-json")
 public class RequestBodyJsonServlet extends HttpServlet {
 
     private ObjectMapper objectMapper = new ObjectMapper();
-
-
 
 
     @Override
