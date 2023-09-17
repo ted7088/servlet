@@ -25,7 +25,7 @@ public class FrontControllerServletV1 extends HttpServlet {
         controllerMap.put("/front-controller/v1/members/members", new MemberListControllerV1());
 
     }
-
+//프런트 컨트롤러를 이용해서 컨트롤러 appconfig 처럼 호출
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("FrontControllerServletV1.service");
