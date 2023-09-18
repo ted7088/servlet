@@ -36,8 +36,6 @@ public class FrontControllerServletV3 extends HttpServlet {
     //프런트 컨트롤러를 이용해서 컨트롤러 appconfig 처럼 호출
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("FrontControllerServletv2.service");
-
         String requestURI = request.getRequestURI();
 
         ControllerV3 controller = controllerMap.get(requestURI);
