@@ -52,7 +52,7 @@ public class FrontControllerServletV3 extends HttpServlet {
 
 
         //new-form
-        String viewName = mv.getViewName();
+        String viewName = mv.getViewName(); //논리이름  new-form
         MyView view = viewResolver(viewName);
 
         view.render(mv.getModel(), request, response);
@@ -68,6 +68,7 @@ public class FrontControllerServletV3 extends HttpServlet {
 
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> paramMap.put(paramName, request.getParameter(paramName)));
+
         return paramMap;
     }
 }
