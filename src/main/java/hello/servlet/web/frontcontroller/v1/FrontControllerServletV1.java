@@ -22,7 +22,7 @@ public class FrontControllerServletV1 extends HttpServlet {
 
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
         controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
-        controllerMap.put("/front-controller/v1/members/members", new MemberListControllerV1());
+        controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());
 
     }
 //프런트 컨트롤러를 이용해서 컨트롤러 appconfig 처럼 호출
