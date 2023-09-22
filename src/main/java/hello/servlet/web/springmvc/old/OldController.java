@@ -7,6 +7,8 @@ import org.springframework.web.servlet.mvc.Controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+//예전 컨트롤러 @컴포터넌트 어노테이션을 이용하고 Controller를 상속받아 자동으로 호출
 @Component("/springmvc/old-controller")
 public class OldController implements Controller {
     @Override

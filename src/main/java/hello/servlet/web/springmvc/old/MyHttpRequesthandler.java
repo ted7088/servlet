@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+//같은 원래 HttpRequestHandler를 상속
 @Component("/springmvc/request-handler")
 public class MyHttpRequesthandler implements HttpRequestHandler {
     @Override
