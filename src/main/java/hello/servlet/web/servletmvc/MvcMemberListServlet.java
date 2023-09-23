@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+
+//웹서블릿으로 url 변경 및 리스트 가져오는 뷰 경로 ㅈ니정
 @WebServlet(name = "mvcMemberListServlet" , urlPatterns = "/servlet-mvc/members")
 public class MvcMemberListServlet extends HttpServlet {
 

@@ -13,6 +13,8 @@ import java.io.IOException;
 
 @WebServlet(name = "mvcMemberSaveServlet", urlPatterns = "/servlet-mvc/members/save")
 public class MvcMemberSaveServlet extends HttpServlet {
+
+    //멤버 목록 인스턴스를 가져옴
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
     @Override

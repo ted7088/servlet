@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+//웹서블릿으로 url 지정 및 뷰 경로 지정
 @WebServlet(name="mvcMemberFormServlet",urlPatterns = "/servlet-mvc/members/new-form")
 public class MvcMemberFormServlet extends HttpServlet {
 
