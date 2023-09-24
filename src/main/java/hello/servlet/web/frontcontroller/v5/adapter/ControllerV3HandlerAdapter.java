@@ -12,11 +12,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ControllerV3HandlerAdapter implements MyHandlerAdapter {
+
+    //서포츠 메소드를 이용해서 핸들러가 3인지 아닌지 확인
     @Override
     public boolean supports(Object handler) {
         return (handler instanceof ControllerV3);
     }
 
+    //모덜 뷰를 넘겨줌
     @Override
     public ModelView handle(HttpServletRequest request, HttpServletResponse response, Object handler) throws ServletException, IOException {
         ControllerV3 controller = (ControllerV3) handler;

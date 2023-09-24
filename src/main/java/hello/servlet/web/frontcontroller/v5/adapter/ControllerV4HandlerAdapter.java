@@ -14,11 +14,13 @@ import java.util.Map;
 
 public class ControllerV4HandlerAdapter implements MyHandlerAdapter {
 
+    //같은 원리로 4가 맞는지 아닌지 확인
     @Override
     public boolean supports(Object handler) {
         return (handler instanceof ControllerV4);
     }
 
+    //핸들러를 통해 모델 뷰를 넘겨줌
     @Override
     public ModelView handle(HttpServletRequest request, HttpServletResponse response, Object handler) throws ServletException, IOException {
         ControllerV4 controller = (ControllerV4) handler;
