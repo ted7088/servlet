@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "helloServlet", urlPatterns = "/hello")
+@WebServlet(name = "helloServlet", urlPatterns = "/hello") //이름과 url pattern 등록
 public class HelloServlet extends HttpServlet {
 
-    @Override
+    @Override //서블릿이 호출되면 서비스 메서드가 호출됨
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("HelloServlet.service");
