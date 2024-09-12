@@ -10,7 +10,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ServletComponentScan //서블릿 자동 등록
 @SpringBootApplication //스프링 부트 어노테이션
 public class ServletApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ServletApplication.class, args);
     }
