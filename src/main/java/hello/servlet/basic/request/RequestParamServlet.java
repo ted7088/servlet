@@ -43,7 +43,7 @@ request.getParameter(paramName));
         System.out.println("[이름이 같은 복수 파라미터 조회]");
         String[] usernames = request.getParameterValues("username");  //첫번째의 값만 반환한다.
         for (String name : usernames) {
-            System.out.println("username = " + name);
+            System.out.println("username = " + name); //iter 이용해서 뽑기 값
         }
 
         response.getWriter().write("ok");
