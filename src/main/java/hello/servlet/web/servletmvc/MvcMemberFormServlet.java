@@ -12,7 +12,7 @@ import java.io.IOException;
 
 
 //웹서블릿으로 url 지정 및 뷰 경로 지정
-@WebServlet(name="mvcMemberFormServlet",urlPatterns = "/servlet-mvc/members/new-form")
+@WebServlet(name="mvcMemberFormServlet",urlPatterns = "/servlet-mvc/members/new-form")  //컨트롤러 역할
 public class MvcMemberFormServlet extends HttpServlet {
 
     @Override
