@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+
+//front controller를 통해서 v1의 컨트롤러들을 받아서 처리함
 @WebServlet(name = "frontControllerServletV1" , urlPatterns = "/front-controller/v1/*")
 public class FrontControllerServletV1 extends HttpServlet {
 
@@ -32,7 +34,7 @@ public class FrontControllerServletV1 extends HttpServlet {
 
         String requestURI = request.getRequestURI();
 
-        ControllerV1 controller = controllerMap.get(requestURI);
+        ControllerV1 controller = controllerMap.get(requestURI);  //다형성
 
         if(controller == null){
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
